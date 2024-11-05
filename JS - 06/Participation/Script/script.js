@@ -1,13 +1,13 @@
 function saisieNombres() {
-    let cel = prompt("Veuillez indiquer célibataire ou marié :");
+    let cel = confirm("Êtes-vous marié ?");
     let enf = parseInt(prompt("Veuillez entrer votre nombre d'enfant :"));
     let sal = parseInt(prompt("Entrez maintenant votre salaire mensuel :"));
     calcul(cel, enf, sal);
 }
 
-calcul(cel2, enf2, sal2) {
+function calcul(cel2, enf2, sal2) {
     let part;
-    if (cel2 = marié) {
+    if (cel2 == true) {
         part = 25;
     }
     else {
@@ -20,6 +20,8 @@ calcul(cel2, enf2, sal2) {
     if (part > 50) {
         part = 50;
     }
+    message = part + " %";
+    return alert(message);
 }
 
 saisieNombres();
